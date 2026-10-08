@@ -6,7 +6,9 @@ RN1 - A placa de cada veículo deve possior 7 caracteres alfanuméricos, maiúsc
 
 RN2 - O valor cobrado por bilhete deve ser cobrado por fração de minutos, sempre arredondando para cima.
 
+RN3 - A URL base a ser utilizada deve ser: http://localhost:{PORTA_SERVICO}
 
+RN4 - Deve ser criado uma variável que irá padronizar o endereço da rota. A variável será chamada 'PORTA_SERVICO', ela será a porta que o serviço gerado deve escutar. Sempre que for necessário usar o endereço da rota deve ser utilizada esta variável.
 
 ## Modelos de Resposta
 
