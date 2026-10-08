@@ -10,6 +10,8 @@ RN3 - A URL base a ser utilizada deve ser: http://localhost:{PORTA_SERVICO}
 
 RN4 - Deve ser criado uma variável que irá padronizar o endereço da rota. A variável será chamada 'PORTA_SERVICO', ela será a porta que o serviço gerado deve escutar. Sempre que for necessário usar o endereço da rota deve ser utilizada esta variável.
 
+RN5 - Existe um tempo de tolerância onde não será cobrado nenhum valor, esta regra está expecificada em UC7 (Tolerância gratuita).
+
 ## Modelos de Resposta
 
 bilhetes: {id, placa, entrada, saida, minutos, valor_centavos, status}
