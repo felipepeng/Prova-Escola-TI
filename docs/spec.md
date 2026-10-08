@@ -1,16 +1,18 @@
 
 ## Regras de Negócio
 
-RN1 - A placa de cada veículo deve possior 7 caracteres alfanuméricos, maiúsculos. 
+RN1 - A placa de cada veículo deve possuir 7 caracteres alfanuméricos, maiúsculos. 
     Exemplo:  "placa": "ABC1D23"
 
 RN2 - O valor cobrado por bilhete deve ser cobrado por fração de minutos, sempre arredondando para cima.
 
 RN3 - A URL base a ser utilizada deve ser: http://localhost:{PORTA_SERVICO}
 
-RN4 - Deve ser criado uma variável que irá padronizar o endereço da rota. A variável será chamada 'PORTA_SERVICO', ela será a porta que o serviço gerado deve escutar. Sempre que for necessário usar o endereço da rota deve ser utilizada esta variável.
+RN4 - Deve ser criada uma variável que irá padronizar o endereço da rota. A variável será chamada 'PORTA_SERVICO', ela será a porta que o serviço gerado deve escutar. Sempre que for necessário usar o endereço da rota deve ser utilizada esta variável.
 
-RN5 - Existe um tempo de tolerância onde não será cobrado nenhum valor, esta regra está expecificada em UC7 (Tolerância gratuita).
+RN5 - Existe um tempo de tolerância onde não será cobrado nenhum valor, esta regra está especificada em UC7 (Tolerância gratuita).
+
+RN6 - Não pode existir um bilhete com data de saída anterior à data de entrada.
 
 ## Modelos de Resposta
 
@@ -35,11 +37,11 @@ POST /bilhetes/{id}/encerramento → 200:
         - Cobra-se por fração de FRACAO_MINUTOS minutos, arredondando para cima (fração exata cobra 1 fração; 1 minuto a mais já cobra a fração seguinte);
         - hora cheia = TARIFA_HORA_CENTAVOS; valor da fração = tarifa ÷ (60 ÷ FRACAO_MINUTOS);
         - aplica-se o teto diário: valor_centavos nunca supera TETO_DIARIO_CENTAVOS;
-        - valor sempre em centavos, inteiro — a API nunca retorna ponto flutuante.1
+        - valor sempre em centavos, inteiro — a API nunca retorna ponto flutuante.
 
 UC3 — Listar ativos
 GET /bilhetes/ativos → 200 com array dos bilhetes abertos, mais recentes primeiro.
-    Deve trazer a lista do bilhetes abertos, filtrando pelos mais recentes 
+    Deve trazer a lista dos bilhetes abertos, filtrando pelos mais recentes 
 
 UC4 — Relatório diário
 GET /relatorios/diario?data=AAAA-MM-DD → 200:

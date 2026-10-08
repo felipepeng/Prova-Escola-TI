@@ -8,6 +8,16 @@ T2 - POST /bilhetes — body {"placa": "ABC1F54"} - deve ser aceito e retornar s
 
 ## Testes do UC2 — Encerrar bilhete
 
-T3 - POST /bilhetes/{id}/encerramento - body {"id": 1, "placa": "ABC1D23", "entrada": "...", "saida": "...",
-    "minutos": 95, "valor_centavos": 1250} 
+T3 - POST /bilhetes/{id}/encerramento - body com data de saída anterior a data de entrada - deve retornar erro 400 (viola a regra de RN6 em spec.md)
+
+
+## Testes do UC3 - Listar ativos
+
+T4 - GET /bilhetes/ativos - caso não exista nenhum bilhete ativo - retornar erro 404 not found.
+
+## Testes do UC4 - Relatório diário
+
+T5 - GET /relatorios/diario?data=AAAA-MM-DD - caso seja inserida uma data inválida - deve retornar erro 400
+
+
 
