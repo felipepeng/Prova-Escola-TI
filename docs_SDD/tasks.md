@@ -1,3 +1,8 @@
+# Tarefas — Zona Azul Digital (API REST)
+
+Ordem de execução do projeto. Siga as tasks em sequência.
+Cada task só termina quando os testes indicados de tests.md passam.
+
 Regra para toda task: escreva os testes indicados de tests.md, rode e confirme que falham,
 implemente o mínimo para passarem e rode `python -m pytest` inteiro antes de avançar.
 

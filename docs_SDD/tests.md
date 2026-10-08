@@ -1,3 +1,9 @@
+# Casos de Teste — Zona Azul Digital (API REST)
+
+Casos de teste por caso de uso, incluindo as bordas de cada regra de negócio.
+Os testes devem ser escritos antes da implementação (TDD).
+Contrato de referência: spec.md.
+
 O Contrato(Rotas, campos, status de resposta) estão especificados em spec.md
 
 ## Testes do UC1 — Abrir bilhete

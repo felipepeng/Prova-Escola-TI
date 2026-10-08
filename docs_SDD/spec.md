@@ -1,3 +1,8 @@
+# Especificação — Zona Azul Digital (API REST)
+
+Requisitos, regras de negócio e contrato REST (rotas, campos, status e erros).
+O contrato aqui é exato: não adicione nem remova campos das respostas.
+Regras permanentes em constitution.md; decisões técnicas em plan.md.
 
 ## Regras de Negócio
 

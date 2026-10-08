@@ -1,3 +1,8 @@
+# Plano Técnico — Zona Azul Digital (API REST)
+
+Decisões técnicas e suas justificativas: stack, estrutura, persistência e relógio.
+Implementa o que está em spec.md, respeitando constitution.md.
+
 O contrato (rotas, campos, status de resposta) está especificado em spec.md.
 
 

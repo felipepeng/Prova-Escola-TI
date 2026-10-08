@@ -1,3 +1,8 @@
+# Constituição — Zona Azul Digital (API REST)
+
+Regras permanentes do projeto. Valem para todos os outros arquivos.
+Em caso de conflito: constitution.md > spec.md > plan.md > tests.md > tasks.md.
+
 Arquivo que contempla as Regras Gerais que devem ser seguidas no Projeto.
 
 # Regras
