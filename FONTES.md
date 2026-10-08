@@ -39,6 +39,7 @@ conta. Se nenhum site foi consultado, escreva: **"Nenhum site consultado."**)*
 | # | Link público da conversa | Onde o conteúdo foi usado |
 | --- | --- | --- |
 | — | | |
+| 1 | https://claude.ai/share/a5c844d5-f2b9-4215-9a7a-b0619db067cd | Dúvidas pontuais |
 
 *(Se nenhuma IA foi utilizada, escreva: **"Nenhuma IA utilizada."**)*
 
